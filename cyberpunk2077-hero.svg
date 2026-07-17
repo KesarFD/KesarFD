@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 1180 500" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Daniel KesarFD — Frontend and AI Engineer</title>
+  <desc id="desc">Animated premium cyberpunk developer profile banner in yellow, black, cyan and red.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111114"/><stop offset=".52" stop-color="#070709"/><stop offset="1" stop-color="#14040a"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f0ff"/><stop offset=".42" stop-color="#fcee0a"/><stop offset=".76" stop-color="#ff003c"/><stop offset="1" stop-color="#00f0ff"/>
+      <animate attributeName="x1" values="-.5;1;-.5" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values=".5;2;.5" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff73d"/><stop offset=".55" stop-color="#fcee0a"/><stop offset="1" stop-color="#d7c900"/></linearGradient>
+    <radialGradient id="redGlow"><stop offset="0" stop-color="#ff003c" stop-opacity=".48"/><stop offset="1" stop-color="#ff003c" stop-opacity="0"/></radialGradient>
+    <radialGradient id="cyanGlow"><stop offset="0" stop-color="#00f0ff" stop-opacity=".3"/><stop offset="1" stop-color="#00f0ff" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="hardGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="13" result="n"><animate attributeName="seed" values="11;15;11" dur="2s" repeatCount="indefinite"/></feTurbulence><feColorMatrix in="n" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .06 0"/></filter>
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="160%"><feGaussianBlur in="SourceAlpha" stdDeviation="16" result="b"/><feOffset dy="16" result="o"/><feFlood flood-color="#000" flood-opacity=".65"/><feComposite in2="o" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="frame"><path d="M22 15H1142L1165 38V461L1141 485H38L15 462V36Z"/></clipPath>
+    <clipPath id="yellowClip"><path d="M48 46H744L771 73V281L744 308H48L31 291V63Z"/></clipPath>
+    <clipPath id="portraitClip"><path d="M815 43H1128L1148 63V396L1125 419H812L792 399V65Z"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect x="15" y="15" width="1150" height="470" fill="url(#night)"/>
+    <ellipse cx="1100" cy="250" rx="260" ry="260" fill="url(#redGlow)"><animateTransform attributeName="transform" type="scale" values=".88;1.08;.88" dur="5s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="740" cy="90" rx="310" ry="220" fill="url(#cyanGlow)"><animateTransform attributeName="transform" type="translate" values="0 0;55 22;0 0" dur="9s" repeatCount="indefinite"/></ellipse>
+
+    <!-- distant data-city -->
+    <g fill="#17171b" stroke="#00f0ff" stroke-opacity=".16">
+      <path d="M16 404h42v-48h25v48h35v-82h18v82h42v-61h23v61h30v-115h18v115h44v-72h31v72h42v-98h22v98h37v-57h30v57h28v-132h17v132h41v-85h26v85h29v-61h34v61h31v-107h20v107h46v-69h25v69h34v-142h18v142h41v-93h31v93h37v-60h27v60h40v-127h18v127h42v-78h34v78h38v-104h21v104h55v81H16Z"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-26 0;0 0" dur="12s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- main yellow identity plate -->
+    <g filter="url(#shadow)">
+      <path d="M48 46H744L771 73V281L744 308H48L31 291V63Z" fill="url(#yellow)"/>
+      <path d="M31 63L48 46h112l-17 14H54L42 72v57H31Z" fill="#00f0ff"/>
+      <path d="M744 308H610l18-14h110l20-20v-58h13v65Z" fill="#ff003c"/>
+    </g>
+    <g clip-path="url(#yellowClip)">
+      <path d="M-15 261L328 -20h80L65 261Z" fill="#fff" opacity=".12"/>
+      <g stroke="#09090b" stroke-opacity=".13"><path d="M31 92h740M31 126h740M31 160h740M31 194h740M31 228h740M31 262h740"/><path d="M125 46v262M235 46v262M345 46v262M455 46v262M565 46v262M675 46v262"/></g>
+      <rect x="31" y="46" width="740" height="262" filter="url(#noise)" opacity=".28"/>
+    </g>
+
+    <g font-family="Bahnschrift Condensed, Arial Narrow, Impact, sans-serif">
+      <text x="68" y="85" fill="#0a0a0c" font-size="10" font-weight="700" letter-spacing="3.4">KSR.IDENTITY / PERSONAL PROFILE / REV 20.77</text>
+      <text x="68" y="121" fill="#0a0a0c" font-size="15" font-weight="700" letter-spacing="2.7">HELLO, NIGHT NETWORK</text>
+      <text x="64" y="221" fill="#09090b" font-size="106" font-weight="900" letter-spacing="-3">DANIEL</text>
+      <text x="67" y="259" fill="#09090b" font-size="24" font-weight="900" letter-spacing="5">FRONTEND <tspan fill="#ff003c">//</tspan> AI ENGINEER</text>
+      <text x="68" y="287" fill="#3a3600" font-size="10" font-weight="700" letter-spacing="2.8">BUILDING INTERFACES FOR HUMAN + MACHINE</text>
+
+      <!-- glitch title echoes -->
+      <text x="67" y="221" fill="#00f0ff" font-size="106" font-weight="900" letter-spacing="-3" opacity="0">DANIEL
+        <animate attributeName="opacity" values="0;0;.65;0;0" keyTimes="0;.74;.755;.775;1" dur="4.3s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="67;67;61;71;67" keyTimes="0;.74;.755;.775;1" dur="4.3s" repeatCount="indefinite"/>
+      </text>
+      <text x="61" y="221" fill="#ff003c" font-size="106" font-weight="900" letter-spacing="-3" opacity="0">DANIEL
+        <animate attributeName="opacity" values="0;0;.55;0;0" keyTimes="0;.76;.77;.79;1" dur="4.3s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- black information rail -->
+    <path d="M48 327H742L760 345V420L742 438H48L31 421V344Z" fill="#0b0b0e" stroke="#fcee0a" stroke-opacity=".32"/>
+    <path d="M31 344h14v77l16 17H48l-17-17Z" fill="#ff003c"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+      <text x="65" y="355" fill="#fcee0a" font-size="9" letter-spacing="2.5">ACTIVE DIRECTIVES</text>
+      <g font-size="12.5">
+        <circle cx="70" cy="381" r="3" fill="#00f0ff" filter="url(#glow)"><animate attributeName="opacity" values=".25;1;.25" dur="1.5s" repeatCount="indefinite"/></circle>
+        <text x="88" y="386" fill="#777780">PRIMARY</text><text x="178" y="386" fill="#f7f7f8">Frontend systems &amp; interfaces</text>
+        <circle cx="70" cy="410" r="3" fill="#ff003c" filter="url(#glow)"><animate attributeName="opacity" values="1;.3;1" dur="1.9s" repeatCount="indefinite"/></circle>
+        <text x="88" y="415" fill="#777780">SECONDARY</text><text x="178" y="415" fill="#f7f7f8">AI products · agents · automation</text>
+      </g>
+      <g transform="translate(552 355)">
+        <text x="0" y="0" fill="#777780" font-size="8" letter-spacing="1.5">LOCATION NODE</text>
+        <text x="0" y="24" fill="#fcee0a" font-size="15" font-weight="700">MOSCOW / RU</text>
+        <rect x="0" y="36" width="156" height="3" fill="#24242a"/><rect x="0" y="36" width="118" height="3" fill="url(#chrome)"><animate attributeName="width" values="54;138;118;54" dur="4s" repeatCount="indefinite"/></rect>
+      </g>
+    </g>
+
+    <!-- cyber portrait module -->
+    <g clip-path="url(#portraitClip)">
+      <path d="M815 43H1128L1148 63V396L1125 419H812L792 399V65Z" fill="#0a0a0d" stroke="#fcee0a"/>
+      <path d="M792 65l20-22h84l-20 15h-56l-15 16v66h-13Z" fill="#fcee0a"/>
+      <path d="M1148 318v78l-23 23h-84l18-15h57l18-17v-69Z" fill="#ff003c"/>
+      <g stroke="#00f0ff" stroke-opacity=".1"><path d="M792 102h356M792 142h356M792 182h356M792 222h356M792 262h356M792 302h356M792 342h356M792 382h356"/><path d="M842 43v376M892 43v376M942 43v376M992 43v376M1042 43v376M1092 43v376"/></g>
+      <ellipse cx="989" cy="229" rx="180" ry="180" fill="url(#redGlow)"/>
+
+      <!-- geometric face -->
+      <g transform="translate(880 88)" filter="url(#hardGlow)">
+        <path d="M108 8L168 31L204 82L193 184L158 237L108 261L58 237L22 184L12 82L48 31Z" fill="#101014" stroke="#00f0ff" stroke-width="2"/>
+        <path d="M108 8L168 31L204 82L183 74L157 43L108 27Z" fill="#fcee0a" opacity=".92"/>
+        <path d="M12 82L48 31L65 42L39 84L43 174L70 224L58 237L22 184Z" fill="#23232a"/>
+        <path d="M204 82L168 31L151 44L177 85L173 174L146 224L158 237L193 184Z" fill="#19191e"/>
+        <path d="M48 96L94 82L89 120L44 127Z" fill="#00f0ff" opacity=".82"><animate attributeName="opacity" values=".25;1;.25" dur="2.2s" repeatCount="indefinite"/></path>
+        <path d="M168 95L122 82L127 120L173 127Z" fill="#ff003c" opacity=".92"><animate attributeName="opacity" values="1;.35;1" dur="1.4s" repeatCount="indefinite"/></path>
+        <path d="M94 83L108 70L122 83L119 151L108 166L97 151Z" fill="#2c2c34" stroke="#fcee0a" stroke-opacity=".7"/>
+        <path d="M66 171L108 185L150 171L137 208L108 221L79 208Z" fill="#09090b" stroke="#00f0ff" stroke-opacity=".55"/>
+        <path d="M82 196h52" stroke="#fcee0a" stroke-width="4"/>
+        <path d="M44 127l25 16M173 127l-25 16M69 143l-3 28M148 143l3 28" stroke="#fcee0a" stroke-width="2" opacity=".62"/>
+        <circle cx="67" cy="108" r="5" fill="#fff" filter="url(#glow)"/><circle cx="149" cy="108" r="5" fill="#fff" filter="url(#glow)"/>
+        <path d="M108 28v42M58 237l50 24l50-24" stroke="#ff003c" stroke-width="2" fill="none"/>
+      </g>
+
+      <g fill="#fcee0a" font-family="ui-monospace, monospace">
+        <text x="815" y="86" font-size="8" letter-spacing="2">OPTIC PROFILE / KSR_FD</text>
+        <text x="820" y="391" font-size="8" letter-spacing="1.7">NEURAL SYNC</text><text x="1088" y="391" font-size="9" text-anchor="end">99.97%</text>
+      </g>
+      <rect x="820" y="400" width="265" height="3" fill="#25252b"/><rect x="820" y="400" width="0" height="3" fill="url(#chrome)"><animate attributeName="width" values="0;265;238;265" dur="3.8s" repeatCount="indefinite"/></rect>
+      <rect x="792" y="80" width="356" height="2" fill="#00f0ff" opacity="0"><animate attributeName="y" values="80;402;80" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.35;0" dur="4s" repeatCount="indefinite"/></rect>
+    </g>
+
+    <!-- edge diagnostics -->
+    <g font-family="ui-monospace, monospace" font-size="7" letter-spacing="1.5">
+      <text x="25" y="220" transform="rotate(-90 25 220)" fill="#00f0ff">DATASTREAM // 0xKSR77 // LIVE</text>
+      <text x="1155" y="170" transform="rotate(90 1155 170)" fill="#fcee0a">PERSONAL OS / FRONTEND-AI</text>
+    </g>
+
+    <!-- moving glitch bars -->
+    <g filter="url(#glow)">
+      <rect x="72" y="151" width="240" height="3" fill="#00f0ff" opacity="0"><animate attributeName="opacity" values="0;0;.9;0;0" keyTimes="0;.55;.57;.6;1" dur="3.7s" repeatCount="indefinite"/><animate attributeName="x" values="72;72;210;54;72" dur="3.7s" repeatCount="indefinite"/></rect>
+      <rect x="812" y="249" width="180" height="4" fill="#ff003c" opacity="0"><animate attributeName="opacity" values="0;0;.75;0;0" keyTimes="0;.7;.72;.75;1" dur="4.6s" repeatCount="indefinite"/><animate attributeName="x" values="812;812;900;790;812" dur="4.6s" repeatCount="indefinite"/></rect>
+    </g>
+
+    <rect x="15" y="15" width="1150" height="470" filter="url(#noise)" opacity=".35" pointer-events="none"/>
+    <rect x="15.5" y="15.5" width="1149" height="469" fill="none" stroke="url(#chrome)" stroke-width="2"/>
+  </g>
+  <path d="M22 15H1142L1165 38V461L1141 485H38L15 462V36Z" fill="none" stroke="#fcee0a" stroke-width="2"/>
+</svg>
